@@ -112,10 +112,10 @@
                         <h5>Request Free Demo</h5>
                         <form>
                            <input type="text" placeholder="Enter Your Name">
-                           <input type="text" placeholder="Enter Your Name">
-                           <input type="text" placeholder="Enter Your Name">
-                           <input type="text" placeholder="Enter Your Name">
-                           <input type="text" placeholder="Enter Your Name">
+                           <input type="email" placeholder="Enter Your Email">
+                           <input type="number" placeholder="Enter Your Phone">
+                           <input type="text" placeholder="Enter Date">
+                           <input type="text" placeholder="Enter Time">
                            <button class="th-btn shadow-1">Schedule Demo</button>
                         </form>
                      </div>
@@ -602,21 +602,39 @@
       <script src="js/jquery-3.7.1.min.js"></script><script src="js/app.min.js"></script><script src="js/main.js"></script>
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
      <script>
-      document.addEventListener("DOMContentLoaded", function () {
-         new Swiper("#testiSlide1", {
-            slidesPerView: 1.5,
-            spaceBetween: 20,
-            pagination: {
+   document.addEventListener("DOMContentLoaded", function () {
+      new Swiper("#testiSlide1", {
+         slidesPerView: 1,
+         spaceBetween: 20,
+         pagination: {
             el: ".swiper-pagination",
             clickable: true,
-            },
-            loop: true,
-            autoplay: {
+         },
+         loop: true,
+         autoplay: {
             delay: 3000, // Slide changes every 3 seconds
             disableOnInteraction: false, // Keeps autoplay active after user interaction
+         },
+         breakpoints: {
+            // when window width is >= 640px
+            640: {
+               slidesPerView: 1,
+               spaceBetween: 20,
             },
-         });
+            // when window width is >= 768px
+            768: {
+               slidesPerView: 1,
+               spaceBetween: 30,
+            },
+            // when window width is >= 1024px
+            1024: {
+               slidesPerView: 1.5,
+               spaceBetween: 40,
+            },
+         },
       });
+   });
       </script>
+
    </body>
 </html>
