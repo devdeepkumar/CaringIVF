@@ -9,7 +9,7 @@
   transition: 0.4s ease-in-out;
 }
 :root {
-  --theme-color: #705494;
+  --theme-color: #681473;
   --theme-color2: #1f5fff;
   --title-color: #000d44;
   --body-color: #788094;
@@ -20,7 +20,7 @@
   --white-color: #ffffff;
   --light-color: #bdbdbd;
   --yellow-color: #ffb539;
-  --success-color: #705494;
+  --success-color: #681473;
   --error-color: #dc3545;
   --th-border-color: #d8dde1;
   --title-font: "Outfit", sans-serif;
@@ -4622,7 +4622,7 @@ ol.wp-block-rss {
 .header-layout1 .header-logo {
   position: relative;
   z-index: 2;
-  height: 100px;
+  /* height: 100px; */
   padding: 20px 100px 20px 0;
 }
 .header-layout1 .header-logo .logo-bg {
@@ -4646,7 +4646,7 @@ ol.wp-block-rss {
     --main-container: 1250px;
   }
 }
-@media (max-width: 1399px) {
+@media (max-width: 991px) {
   .header-layout1 .header-button .th-btn {
     display: none;
   }
